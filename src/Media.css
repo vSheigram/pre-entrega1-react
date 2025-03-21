@@ -1,0 +1,20 @@
+.social-icons {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.social-icons a {
+    display: block;
+    padding: 12px;
+    background-color: #0e0f11;
+    color: #acacac;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #acacac;
+    color: #0e0f11;
+}

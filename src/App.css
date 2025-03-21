@@ -1,0 +1,63 @@
+#root {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(90deg, #f27a24, #f8e449, #67c3e9, #6e60f9);
+  background-size: 300% 300%;
+  animation: gradientBG 10s ease infinite;
+  color: #fff;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
+  /* Evita scroll lateral */
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Cambia el color del ícono */
+.scroll-to-top i {
+  font-size: 24px;
+  /* Tamaño del ícono */
+  color: white;
+  /* Asegura que la flecha sea blanca */
+}
+
+/* Efecto hover para mejorar la interacción */
+.scroll-to-top:hover {
+  background-color: #333;
+  transform: scale(1.1);
+}

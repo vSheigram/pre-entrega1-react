@@ -1,0 +1,23 @@
+.logo {
+    height: 3.4em;
+    max-width: 100%;
+    display: block;
+    transition: 400ms;
+}
+
+.logo:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.nav-item {
+    list-style-type: none;
+    display: inline;
+    margin-right: 1em;
+    transition: 400ms;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
